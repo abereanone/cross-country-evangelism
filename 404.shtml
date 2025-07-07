@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cross Country Evangelism</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Cross Country Evangelism</h1>
+    <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#gospel">The Gospel</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/#donate">Donate</a></li>
+        <li><a href="/#thankyou">Thank You Tract</a></li>
+        <li><a href="/#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="404" class="content-section">
+      <h2>404 Error</h2>
+      <p>
+Hi, you attempted to reach a page that is not found any longer on this server. Please use the menu above to browse the site!
+      </p>
+	</section>
+
+  </main>
+
+  <footer>
+    <p>Unless otherwise stated on our website or its content (or is the property of a third-party), all of our website and its content is within the Public Domain and can be used by anyone without restrictions (and no attribution is necessary).</p>
+
+    <p>Our ministry seeks to abide by and uphold the <a href="https://thedoreanprinciple.org/" target="_blank">Dorean Principle</a>. You can learn more about the importance of freely giving of ministry resources at <a href="https://sellingjesus.org/" target="_blank">Selling Jesus</a>. Lastly, you can learn more about the importance of removing all copyright restrictions from Christian resources at <a href="https://copy.church/" target="_blank">Let’s copy, church.</a></p>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", () => {
+  if (!window.location.hash) {
+    window.location.hash = "#about";
+  }
+});
+  </script>
+
+</body>
+</body>
+</html>
