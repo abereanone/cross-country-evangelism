@@ -230,3 +230,22 @@ footer a:focus {
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0; /* remove gaps between images */
+  margin: 0; /* remove outer margins if any */
+  padding: 0;
+}
+
+.photo-gallery a,
+.photo-gallery img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+  width: 300px; /* make sure images fill their container */
+  height: auto;
+  max-width: none; /* override any max-width */
+}
