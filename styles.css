@@ -233,6 +233,9 @@ footer a:focus {
   #menu-toggle {
     display: block;
   }
+  main {
+    padding-top: 220px; /* or more, if needed */
+  }
 
   /* Hide nav menu by default on mobile */
   nav {
@@ -357,3 +360,4 @@ footer a:focus {
   padding: 0 1rem;
   text-align: left;
 }
+
