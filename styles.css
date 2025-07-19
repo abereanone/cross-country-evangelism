@@ -236,7 +236,11 @@ footer a:focus {
   main {
     padding-top: 220px; /* or more, if needed */
   }
-
+  /* Give extra right‐hand padding so the centered title
+     can’t run into the hamburger icon */
+  header {
+    padding-right: 4rem;
+  }
   /* Hide nav menu by default on mobile */
   nav {
     display: none;
@@ -361,3 +365,27 @@ footer a:focus {
   text-align: left;
 }
 
+/* hide the break on desktop/large screens */
+.mobile-break {
+  display: none;
+}
+
+/* on small screens, show the break so “Evangelism” moves to line 2 */
+/* on desktop, spans stay inline so it’s one line */
+header h1 .title-line1,
+header h1 .title-line2 {
+  display: inline;
+}
+
+/* on mobile, force each span onto its own line */
+@media (max-width: 600px) {
+  header h1 .title-line1,
+  header h1 .title-line2 {
+    display: block;
+  }
+
+  /* optional: tighten up spacing under the break */
+  header h1 {
+    line-height: 1.2;
+  }
+}
