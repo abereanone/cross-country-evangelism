@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- transparent background -->
+  <rect width="64" height="64" fill="none"></rect>
+
+  <!-- vertical stem of the cross -->
+  <rect x="28" y="0" width="8" height="64" fill="#1a237e"></rect>
+
+  <!-- horizontal arm of the cross, set above center -->
+  <rect x="16" y="20" width="32" height="8" fill="#1a237e"></rect>
+</svg>

@@ -389,3 +389,17 @@ header h1 .title-line2 {
     line-height: 1.2;
   }
 }
+.mobile-break { display: none; }
+
+@media (max-width: 600px) {
+  .mobile-break { display: inline; }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    line-height: 1.1; /* tighter spacing between title lines */
+    max-width: calc(100% - 4rem);
+    margin: 0 auto;
+  }
+  /* … */
+}
