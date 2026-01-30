@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cross Country Evangelism Newsletter</title>
     <link>https://crosscountryevangelism.com/newsletter.html</link>
     <atom:link href="https://crosscountryevangelism.com/newsletter.xml" rel="self" type="application/rss+xml" />
     <description>Quarterly updates from Cross Country Evangelism.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Dec 2025 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 13:56:04 GMT</lastBuildDate>
     <item>
       <title>Fall 2025 Newsletter</title>
       <link>https://crosscountryevangelism.com/newsletters/2025-12.html</link>
