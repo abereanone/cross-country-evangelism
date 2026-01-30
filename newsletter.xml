@@ -3,13 +3,14 @@
   <channel>
     <title>Cross Country Evangelism Newsletter</title>
     <link>https://crosscountryevangelism.com/newsletter.html</link>
+    <atom:link href="https://crosscountryevangelism.com/newsletter.xml" rel="self" type="application/rss+xml" />
     <description>Quarterly updates from Cross Country Evangelism.</description>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Dec 2025 12:00:00 GMT</lastBuildDate>
     <item>
       <title>Fall 2025 Newsletter</title>
       <link>https://crosscountryevangelism.com/newsletters/2025-12.html</link>
-      <guid>https://crosscountryevangelism.com/newsletters/2025-12.html</guid>
+      <guid isPermaLink="true">https://crosscountryevangelism.com/newsletters/2025-12.html</guid>
       <pubDate>Mon, 01 Dec 2025 12:00:00 GMT</pubDate>
       <description>September-December 2025: ministry updates and photo highlights from NYC, Massachusetts, Ohio, and Virginia.</description>
       <media:content url="https://crosscountryevangelism.com/images/NL-2025-12-01.jpg" medium="image" />
