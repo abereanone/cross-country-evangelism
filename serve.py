@@ -18,7 +18,7 @@ Static files are still served straight off disk, so this is only a router.
 import os
 import sys
 from functools import partial
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlsplit
 
 
@@ -70,9 +70,13 @@ def main():
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 8081
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     handler = partial(PagesHandler, directory=os.getcwd())
+    # Threaded with daemon threads: a browser keep-alive connection would otherwise
+    # block the single-threaded server inside a socket read, and Ctrl-C would sit
+    # unprocessed until that connection timed out.
+    ThreadingHTTPServer.daemon_threads = True
     print(f"http://localhost:{port}  (Cloudflare Pages routing: extensionless URLs, real 404s)")
     try:
-        HTTPServer(("", port), handler).serve_forever()
+        ThreadingHTTPServer(("", port), handler).serve_forever()
     except KeyboardInterrupt:
         print("\nstopped")
 
